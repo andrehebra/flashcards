@@ -2,13 +2,18 @@
   "name": "flashcards-web",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "babel src --out-dir dist"
   },
   "author": "Andre Hebra",
   "license": "ISC",
   "dependencies": {
-    "firebase": "^9.17.1"
+    "babelify": "^10.0.0",
+    "firebase": "^9.17.1",
+    "webpack-cli": "^5.0.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.75.0"
   }
 }
