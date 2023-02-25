@@ -1,8 +1,8 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { getFirestore } from 'firebase/firestore/lite';
-import { collection, getDocs } from "firebase/firestore"; 
+//import { getFirestore } from 'firebase/firestore/lite';
+import { getFirestore, collection, getDocs, addDoc } from "firebase/firestore"; 
 
 
 // TODO: Add SDKs for Firebase products that you want to use
@@ -28,7 +28,7 @@ const db = getFirestore(app);
 
 try {
   const docRef = await addDoc(collection(db, "users"), {
-    first: "Ada",
+    first: "Andre",
     last: "Lovelace",
     born: 1815
   });
